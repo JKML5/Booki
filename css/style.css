@@ -54,3 +54,51 @@ nav a {
 nav .selected a, nav a:hover {
     color: #0065FC;
 }
+
+main {
+    padding: 0 50px;
+}
+
+main h2 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+main {
+    line-height: 1;
+}
+
+/* Search bar */
+#searchbar {
+    display: flex;
+}
+
+#searchbar .location-dot {
+    width: 50px;
+    height: 50px;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: 19px;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#searchbar .searchInput {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+#searchbar .searchButton {
+    background-color: #0065FC;
+    color: #ffffff;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding : 0 15px;
+    font-weight: bold;
+}
