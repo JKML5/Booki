@@ -102,3 +102,56 @@ main {
     padding : 0 15px;
     font-weight: bold;
 }
+
+/* Filters */
+#filters {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#filters strong {
+    margin-right: 30px;
+}
+
+#filters .filter {
+    display: flex;
+    align-items: center;
+    border: 2px solid #f2f2f2;
+    border-left: none;
+    border-radius: 50px;
+    margin-right: 25px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+#filters .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #deebff;
+    color: #0065FC;
+    margin-right: 15px;
+}
+
+/* Information bloc */
+.info {
+    margin: 30px 0 0 0;
+}
+
+.info i {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #f2f2f2;
+    padding: 4px;
+    color: #0065FC;
+    font-size: 13px;
+    border-radius: 50px;
+    position: relative;
+    bottom: 2px;
+    text-align: center;
+    margin-right: 5px;
+}
