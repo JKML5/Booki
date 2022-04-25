@@ -155,3 +155,90 @@ main {
     text-align: center;
     margin-right: 5px;
 }
+
+#results_wrapper {
+    height: 625px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#results_wrapper h2 {
+    margin: 0 0 20px 0;
+}
+
+/* Hébergements à [Ville] */
+#accomodations {
+    width: 880px;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+#accomodations .cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#accomodations .card {
+    background-color: #ffffff;
+    width: 245px;
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#accomodations .card img {
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#accomodations .card .description {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#accomodations .card h3 {
+    margin: 0;
+}
+
+#accomodations .card p {
+    margin: 0;
+}
+
+/* Les plus populaires */
+#most_popular {
+    width: 420px;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+#most_popular .fa-star {
+    float: right;
+}
+
+#most_popular .cards {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between
+}
+
+#most_popular .card {
+    background-color: #ffffff;
+    width: 100%;
+    height: 145px;
+    border-radius: 15px;
+}
