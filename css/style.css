@@ -167,6 +167,11 @@ main {
     margin: 0 0 20px 0;
 }
 
+.card {
+    box-shadow: 0 5px 15px #dddddd;
+    padding: 5px;
+}
+
 /* Hébergements à [Ville] */
 #accomodations {
     width: 880px;
@@ -188,14 +193,13 @@ main {
     height: 200px;
     margin-bottom: 30px;
     border-radius: 15px;
-    padding: 5px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 #accomodations .card img {
     object-fit: cover;
     width: 100%;
-    height: 120px;
+    height: 115px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
@@ -205,10 +209,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
-#accomodations .card h3 {
+h3 {
     margin: 0;
 }
 
@@ -237,10 +241,27 @@ main {
 }
 
 #most_popular .card {
+    display: flex;
     background-color: #ffffff;
     width: 100%;
     height: 145px;
     border-radius: 15px;
+    font-size: 13px;
+}
+
+#most_popular .card img {
+    object-fit: cover;
+    width: 125px;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#most_popular .card .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 20px 10px 20px;
 }
 
 /* Notation */
