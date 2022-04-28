@@ -336,3 +336,34 @@ h3 {
 #activities .small img {
     height: 110px;
 }
+
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+    padding: 50px;
+}
+
+footer ul {
+    list-style: none;
+    width: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    margin-top: 15px;
+}
+
+footer li:first-child {
+    font-weight: bold;
+    margin: 0;
+}
+
+footer li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    text-decoration: underline;
+}
