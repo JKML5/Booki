@@ -11,26 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/0548668964.js" crossorigin="anonymous"></script>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico" />
 </head>
 <body>
     <header>
-        <h1><img src="./images/logo/Booki.png" alt="Booki | Trouvez votre hébergement pour des vacances de rêve"></h1>
+        <a href="#" title="Accueil"><img src="./images/logo/Booki.png" alt="Booki | Trouvez votre hébergement pour des vacances de rêve"></a>
         <nav>
             <ul>
-                <li><a href="#">Activités</a></li>
-                <li class="selected"><a href="#">Hébergements</a></li>
+                <li><a href="#activities">Activités</a></li>
+                <li><a href="#accomodations">Hébergements</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
             <!-- Search bar -->
             <div id="searchbar">
                 <div class="location-dot"><i class="fa fa-location-dot" aria-hidden="true"></i></div>
-                <input type="text" name="search" class="searchInput" value="Marseille, France" />
+                <input type="text" name="search" class="searchInput" placeholder="Marseille, France" />
                 <input type="button" value="Rechercher" class="searchButton" />
             </div>
             <!-- END Search bar -->
@@ -167,6 +168,10 @@
                         </div>
                     </div>
                 </div>
+
+                <p class="see-more">
+                    <a href="#" title="Afficher plus">Afficher plus</a>
+                </p>
             </section>
             <!-- END Hébergements à [Ville] -->
 
