@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <a href="#" title="Accueil"><img src="./images/logo/Booki.png" alt="Booki | Trouvez votre hébergement pour des vacances de rêve"></a>
+        <a href="#" title="Accueil"><img src="./images/logo-booki.png" alt="Booki | Trouvez votre hébergement pour des vacances de rêve"></a>
         <nav>
             <ul>
                 <li><a href="#activities">Activités</a></li>
@@ -24,7 +24,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="search_section">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
@@ -33,33 +33,36 @@
                 <div class="location-dot"><i class="fa fa-location-dot" aria-hidden="true"></i></div>
                 <input type="text" name="search" class="searchInput" placeholder="Marseille, France" />
                 <input type="button" value="Rechercher" class="searchButton" />
+                <a href="#" class="searchButtonMobile"><i class="fa-solid fa-search"></i></a>
             </div>
             <!-- END Search bar -->
 
             <!-- Filters -->
             <div id="filters">
                 <strong>Filtres</strong>
-
-                <div class="filter">
-                    <div class="icon">
-                        <i class="fa-solid fa-money-bill-wave"></i>
+                
+                <div class="content">
+                    <div class="filter">
+                        <div class="icon">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+                        Economique
                     </div>
-                    Economique
-                </div>
 
-                <div class="filter">
-                    <div class="icon"><i class="fa-solid fa-child-reaching"></i></div>
-                    Familial
-                </div>
+                    <div class="filter">
+                        <div class="icon"><i class="fa-solid fa-child-reaching"></i></div>
+                        Familial
+                    </div>
 
-                <div class="filter">
-                    <div class="icon"><i class="fa-solid fa-heart"></i></div>
-                    Romantique
-                </div>
+                    <div class="filter">
+                        <div class="icon"><i class="fa-solid fa-heart"></i></div>
+                        Romantique
+                    </div>
 
-                <div class="filter">
-                    <div class="icon"><i class="fa-solid fa-dog"></i></div>
-                    Animaux autorisés
+                    <div class="filter">
+                        <div class="icon"><i class="fa-solid fa-dog"></i></div>
+                        Animaux autorisés
+                    </div>
                 </div>
             </div>
             <!-- END Filters -->

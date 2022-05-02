@@ -1,4 +1,5 @@
 /* box-sizing */
+
 * {
     box-sizing: border-box; /* Opera/IE 8+ */
     -moz-box-sizing: border-box; /* Firefox, autres Gecko */
@@ -31,23 +32,60 @@ nav ul {
     display: flex;
 }
 
-nav li {
+nav li a {
+    display: block;
     padding: 50px 30px;
-    border-top: 2px solid transparent;
-}
-
-nav li:hover {
-    border-top: 2px solid #0065FC;
-}
-
-nav a {
     text-decoration: none;
     color: #000000;
+    border-top: 2px solid transparent;
 }
 
 nav a:hover {
     color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
+
+@media screen and (max-width: 768px)
+{
+    header {
+        flex-direction: column;
+        padding: 25px 0 0 0;
+    }
+
+    header img {
+        height: 70px;
+        padding: 0;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: row-reverse;
+        padding: 0;
+    }
+
+    nav li {
+        flex: 1;
+        text-align: center;
+    }
+
+    nav li a {
+        padding: 10px 0;
+        border-top: none;
+        border-bottom: 3px solid transparent;
+    }
+
+    nav li a:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+}
+
+/* Main */
 
 main {
     padding: 0 50px;
@@ -99,11 +137,19 @@ main {
     cursor: pointer;
 }
 
+#searchbar .searchButtonMobile {
+    display: none;
+}
+
 /* Filters */
 #filters {
     display: flex;
     align-items: center;
     margin-top: 30px;
+}
+
+#filters .content {
+    display: flex;
 }
 
 #filters strong {
@@ -116,7 +162,7 @@ main {
     border: 2px solid #f2f2f2;
     border-left: none;
     border-radius: 50px;
-    margin-right: 25px;
+    margin: 6px 25px 6px 0;
     padding-right: 20px;
     font-weight: bold;
 }
@@ -131,6 +177,51 @@ main {
     background-color: #deebff;
     color: #0065FC;
     margin-right: 15px;
+}
+
+@media screen and (max-width: 768px)
+{
+    main {
+        padding: 0;
+    }
+
+    #search_section {
+        padding: 0 20px;
+    }
+
+    #searchbar .searchInput {
+        width: 100%;
+    }
+
+    #searchbar .searchButton {
+        display: none;
+    }
+
+    #searchbar .searchButtonMobile {
+        display: block;
+        background-color: #0065FC;
+        color: #ffffff;
+        border: none;
+        border-radius: 15px;
+        padding: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        font-size: 19px;
+    }
+
+    #filters {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #filters .content {
+        flex-wrap: wrap;
+    }
+
+    #filters strong {
+        margin-bottom: 20px;
+    }
 }
 
 /* Information bloc */
@@ -275,6 +366,34 @@ h3 {
     padding: 15px 20px 10px 20px;
 }
 
+@media screen and (max-width: 768px)
+{
+    #results_wrapper {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    
+    #accomodations, #most_popular {
+        margin: 0;
+        border-radius: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #most_popular .cards {
+        padding: 0;
+    }
+
+    #most_popular .card, #accomodations .card {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #accomodations {
+        background-color: #ffffff;
+    }
+}
+
 /* Notation */
 .rating {
     font-size: 12px;
@@ -297,7 +416,8 @@ h3 {
 
 #activities .cards {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     max-height: 450px;
     justify-content: space-between;
     align-content: space-between;
@@ -337,6 +457,27 @@ h3 {
     height: 110px;
 }
 
+@media screen and (max-width: 768px)
+{
+    #activities {
+        padding: 0 20px 40px;
+    }
+
+    #activities .cards {
+        max-height: 100%;
+    }
+
+    #most_popular .card, #accomodations .card, #activities .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #activities .big img, #activities .medium img, #activities .small img {
+        height: 135px;
+    }
+}
+
+/* Footer */
 footer {
     background-color: #f2f2f2;
     display: flex;
@@ -366,4 +507,16 @@ footer li a {
 
 footer li a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px)
+{
+    footer {
+        flex-direction: column;
+        padding: 40px 20px 0;
+    }
+
+    footer ul {
+        margin-bottom: 40px;
+    }
 }
