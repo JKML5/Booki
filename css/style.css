@@ -310,11 +310,14 @@ main {
     justify-content: space-between;
 }
 
-#accomodations .card {
-    background-color: #ffffff;
-    width: 245px;
+#accomodations .cards a {
+    width: 31%;
     height: 200px;
     margin-bottom: 30px;
+}
+
+#accomodations .card {
+    background-color: #ffffff;
     border-radius: 15px;
     font-size: 13px;
 }
@@ -398,35 +401,13 @@ h3 {
     padding: 15px 20px 10px 20px;
 }
 
-@media screen and (max-width: 768px) {
-    #results_wrapper {
-        flex-direction: column-reverse;
-    }
-    
-    #accomodations, #most_popular {
-        margin: 0;
-        border-radius: 0;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    #most_popular .cards {
-        padding: 0;
-    }
-
-    #most_popular .card, #accomodations .card {
-        width: 100%;
-        margin: 5px 0;
-    }
-
-    #accomodations {
-        background-color: #ffffff;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablets */
     #accomodations {
         padding: 30px 20px 0;
+    }
+
+    #accomodations .cards a {
+        width: 48%;
     }
 
     #results_wrapper {
@@ -447,6 +428,32 @@ h3 {
     #most_popular a {
         width: 48%;
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) { /* Mobile */
+    #results_wrapper {
+        flex-direction: column-reverse;
+    }
+    
+    #accomodations, #most_popular {
+        margin: 0;
+        border-radius: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #most_popular .cards {
+        padding: 0;
+    }
+
+    #most_popular .cards a, #accomodations .cards a {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #accomodations {
+        background-color: #ffffff;
     }
 }
 
@@ -527,10 +534,8 @@ h3 {
 
     #most_popular a, #accomodations a, #activities a {
         width: 100%;
-    }
-
-    #most_popular .card, #accomodations .card, #activities .card {
         margin: 10px 0;
+
     }
 
     #activities .big img, #activities .medium img, #activities .small img {
