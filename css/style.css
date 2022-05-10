@@ -40,7 +40,7 @@ nav li a {
     border-top: 2px solid transparent;
 }
 
-nav a:hover, .selected {
+nav a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }
@@ -76,7 +76,7 @@ nav a:hover, .selected {
         border-bottom: 3px solid transparent;
     }
 
-    nav li a:hover, .selected {
+    nav li a:hover {
         color: #0065FC;
         border-top: none;
         border-bottom: 3px solid #0065FC;
