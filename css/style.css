@@ -600,7 +600,7 @@ footer li a:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /* Mobile */
     footer .content {
         flex-direction: column;
         padding: 40px 20px 0;
@@ -608,5 +608,6 @@ footer li a:hover {
 
     footer ul {
         margin-bottom: 40px;
+        width: 100%;
     }
 }
