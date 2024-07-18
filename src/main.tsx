@@ -10,7 +10,7 @@ if (rootElement) {
 
   root.render(
     <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename="/Booki">
         <App />
       </BrowserRouter>
     </React.StrictMode>,
